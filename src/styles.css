@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+/* global styling for sticky footer*/
+
+
+/* Global typography */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Color palette */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #ff5722;
+}
+
+/* Global layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Utility classes */
+.button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.footer-container {
+  flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #3f51b5;
+  padding: 10px 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.brand-name {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background-color: #00509e;
+  border-radius: 5px;
+}

@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* body {
+  display: flex;
+  flex-direction: column;
+}
+ */
+
+
+
+/* .content-outer-container {
+  flex-grow: 1; /* This makes the content grow to fill available space 
+} */
+
+.footer-container {
+  flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #003366;
+  padding: 10px 20px;
+}
+
+.brand-name {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.nav-links a:hover {
+  background-color: #00509e;
+  border-radius: 5px;
+}
