@@ -6,7 +6,7 @@
         <a routerLink="/register">Register</a>
       </div>} -->
 
- 
+      @if (authService.currentUserSig()== null){
         <nav class="navbar">
             <div class="brand-name">Shannon Pilots</div>
             <ul class="nav-links">
@@ -14,10 +14,25 @@
               <li><a routerLink="/register">Register</a></li>
             </ul>
         </nav>
-      <!-- } -->
+    } 
  
 
     @if (authService.currentUserSig()){
+
+      <nav class="navbar">
+        <div class="brand-name">Shannon Pilots</div>
+        <ul class="nav-links">
+            <li><a href="/test">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="/test">Clients</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+
+
+
       <div>
         {{authService.currentUserSig()?.username}}
         <span (click)="logout()">Logout</span>
